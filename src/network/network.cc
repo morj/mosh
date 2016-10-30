@@ -237,7 +237,7 @@ Connection::Connection( const char *desired_ip, const char *desired_port ) /* se
     remote_addr_len( 0 ),
     server( true ),
     MTU( DEFAULT_SEND_MTU ),
-    key(),
+    key("790RmsZ+DtKOGSeVqsS6DA"), // TODO: this is a hack
     session( key ),
     direction( TO_CLIENT ),
     saved_timestamp( -1 ),
@@ -404,6 +404,7 @@ void Connection::send( const string & s )
 
   ssize_t bytes_sent = sendto( sock(), p.data(), p.size(), MSG_DONTWAIT,
 			       &remote_addr.sa, remote_addr_len );
+
 
   if ( bytes_sent == static_cast<ssize_t>( p.size() ) ) {
     have_send_exception = false;

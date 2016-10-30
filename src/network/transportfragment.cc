@@ -34,7 +34,7 @@
 
 #include "byteorder.h"
 #include "transportfragment.h"
-#include "transportinstruction.pb.h"
+#include "protobufs/transportinstruction.pb.h"
 #include "compressor.h"
 #include "fatal_assert.h"
 

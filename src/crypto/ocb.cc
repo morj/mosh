@@ -54,7 +54,7 @@
 #define USE_APPLE_COMMON_CRYPTO_AES       0
 #define USE_NETTLE_AES       0
 #define USE_OPENSSL_AES      1  /* http://openssl.org                      */
-#define USE_REFERENCE_AES    0  /* Internet search: rijndael-alg-fst.c     */
+#define USE_REFERENCE_AES    1  /* Internet search: rijndael-alg-fst.c     */
 #define USE_AES_NI           0  /* Uses compiler's intrinsics              */
 #endif
 

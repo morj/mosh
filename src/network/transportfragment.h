@@ -37,7 +37,7 @@
 #include <vector>
 #include <string>
 
-#include "transportinstruction.pb.h"
+#include "protobufs/transportinstruction.pb.h"
 
 using std::vector;
 using std::string;

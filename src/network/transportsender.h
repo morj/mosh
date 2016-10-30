@@ -38,7 +38,7 @@
 #include <list>
 
 #include "network.h"
-#include "transportinstruction.pb.h"
+#include "protobufs/transportinstruction.pb.h"
 #include "transportstate.h"
 #include "transportfragment.h"
 #include "prng.h"
